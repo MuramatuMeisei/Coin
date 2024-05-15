@@ -7,7 +7,7 @@ public class MoveTable : MonoBehaviour
     public float speed = 2.0f;
     public float amplitude = 2f;
 
-    private float originalZ;
+    private float positionZ;
 
     private void Start()
     {
