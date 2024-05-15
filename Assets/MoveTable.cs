@@ -12,7 +12,7 @@ public class MoveTable : MonoBehaviour
     private void Start()
     {
         //オブジェクトの初期Z座標を保存
-        originalZ = transform.position.z;
+        positionZ = transform.position.z;
     }
 
     private void Update()
@@ -22,7 +22,7 @@ public class MoveTable : MonoBehaviour
 
         //オブジェクトの位置を更新
         Vector3 newPosition = transform.position;
-        newPosition.z = originalZ + zOffSet;
+        newPosition.z = positionZ + zOffSet;
         transform.position = newPosition;
     }
 }
